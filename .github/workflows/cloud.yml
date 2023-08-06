@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
     - name: Checkout zipper
       uses: actions/checkout@v2
@@ -58,4 +58,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: Image
-        path: /home/runner/work/kernelsu-xiaomi-cas-online/kernelsu-xiaomi-cas-online/zipper
+        path: /home/ubuntu/actions-runner/work/kernelsu-xiaomi-cas-online/kernelsu-xiaomi-cas-online/zipper
